@@ -19,12 +19,7 @@ function Openbar() {
 }
 
 // Oldalsáv alapértelmezett állapota (rejtett mobilon)
-document.addEventListener("DOMContentLoaded", () => {
-  const sidebar = document.querySelector(".sidebar");
-  if (window.innerWidth < 1024) {
-    sidebar.classList.add("-translate-x-full");
-  }
-});
+
 
 
  // JavaScript to toggle sidebar on mobile
@@ -41,13 +36,10 @@ document.addEventListener("click", (event) => {
  // Csak a dropdown gombokra reagáljon
  const target = event.target.closest("[data-dropdown-toggle]");
  if (target) {
-     const menuId = target.dataset.dropdown-toggle;
-     const arrowId = target.dataset.arrow-toggle;
-     const submenu = document.getElementById(menuId);
-     const arrow = document.getElementById(arrowId);
+     
+    
 
-     if (submenu) submenu.classList.toggle("hidden");
-     if (arrow) arrow.classList.toggle("rotate-0");
+     
 
      // Eseménybuborékolás megállítása
      event.stopPropagation();
@@ -73,6 +65,5 @@ if (!event.target.closest('.text-white')) {
  }
 }
 };
-
 
 

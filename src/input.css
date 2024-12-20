@@ -2,9 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 @tailwindcss /forms;
-
-#penzugyekAlmenu {
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  max-height: 0;
-}
